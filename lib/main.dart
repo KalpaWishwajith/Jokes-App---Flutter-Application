@@ -2,21 +2,21 @@ import 'package:flutter/material.dart';
 import 'joke_service.dart';
 
 void main() {
-  runApp(const JokeApp());
+  runApp(const JokesApp());
 }
 
-class JokeApp extends StatelessWidget {
-  const JokeApp({Key? key}) : super(key: key);
+class JokesApp extends StatelessWidget {
+  const JokesApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Joke App',
+      title: 'Jokes App',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Joke App'),
+      home: const MyHomePage(title: 'Jokes App'),
     );
   }
 }
@@ -69,7 +69,7 @@ class _MyHomePageState extends State<MyHomePage> {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             const Text(
-              'Welcome to the Joke App!',
+              'Welcome to the Jokes App!',
               style: TextStyle(
                   color: Colors.blue,
                   fontSize: 22,
