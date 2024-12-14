@@ -1,3 +1,12 @@
+pluginManagement {
+    repositories {
+        google() // For Android Gradle Plugin
+        mavenCentral() // For general dependencies
+        gradlePluginPortal() // Resolves Gradle plugins
+        
+    }
+}
+
 include ':app'
 
 def localPropertiesFile = new File(rootProject.projectDir, "local.properties")
@@ -8,4 +17,17 @@ localPropertiesFile.withReader("UTF-8") { reader -> properties.load(reader) }
 
 def flutterSdkPath = properties.getProperty("flutter.sdk")
 assert flutterSdkPath != null, "flutter.sdk not set in local.properties"
+
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android' // Use this for older style of plugin application
 apply from: "$flutterSdkPath/packages/flutter_tools/gradle/app_plugin_loader.gradle"
+
+
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
