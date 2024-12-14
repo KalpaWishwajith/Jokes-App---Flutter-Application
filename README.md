@@ -1,4 +1,5 @@
 Jokes App 📱
+
 A Flutter application designed to fetch jokes from an online API and cache them locally for offline use. This app showcases efficient API integration, caching with shared_preferences, and proper handling of online/offline scenarios while maintaining a clean and responsive UI.
 
 📋 Features
