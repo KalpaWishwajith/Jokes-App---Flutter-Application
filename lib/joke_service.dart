@@ -6,7 +6,7 @@ class JokeService {
   Future<List<dynamic>> fetchJokes() async {
     try {
       final response = await _dio.get(
-        'https://v2.jokeapi.dev/joke/Any?amount=3',
+        'https://v2.jokeapi.dev/joke/Any?amount=5',
       );
 
       if (response.statusCode == 200 && response.data != null) {
