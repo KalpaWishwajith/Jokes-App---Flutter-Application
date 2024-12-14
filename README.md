@@ -1,16 +1,53 @@
-# jokes_app
+Jokes App 📱
 
-A new Flutter project.
+A Flutter application designed to fetch jokes from an online API and cache them locally for offline use. This app showcases efficient API integration, caching with shared_preferences, and proper handling of online/offline scenarios while maintaining a clean and responsive UI.
 
-## Getting Started
+📋 Features
+Online Mode:
+Fetches and displays 5 jokes from an API using an HTTP GET request.
 
-This project is a starting point for a Flutter application.
+Offline Mode:
+Displays locally cached jokes when no internet connection is available, ensuring a seamless user experience.
 
-A few resources to get you started if this is your first Flutter project:
+Data Caching:
+Uses the shared_preferences package to store jokes for offline use.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+JSON Handling:
+Properly serializes and deserializes joke data for storage and retrieval.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Error Handling:
+Provides fallback mechanisms for API errors and network unavailability.
+
+🛠️ Technologies Used
+Framework: Flutter
+Networking: HTTP (http package)
+Caching: Shared Preferences (shared_preferences package)
+State Management: setState
+
+🚀 How to Run
+Clone the Repository:
+
+bash
+Copy code
+git clone https://github.com/yourusername/JokesApp.git
+Unzip the Flutter Project:
+Extract the contents of flutter_project.zip.
+
+Set Up Your Environment:
+Ensure you have Flutter installed and set up. Run:
+
+bash
+Copy code
+flutter doctor
+Install Dependencies:
+Navigate to the project directory and run:
+
+bash
+Copy code
+flutter pub get
+Run the App:
+Launch the app on an emulator or connected device:
+
+bash
+Copy code
+flutter run
